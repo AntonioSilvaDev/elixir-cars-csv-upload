@@ -1,0 +1,16 @@
+<.header>
+  New Car
+  <:subtitle>Use this form to manage car records in your database.</:subtitle>
+</.header>
+
+<.car_form changeset={@changeset} />
+
+<br/>
+<hr/>
+<div>
+  <p><strong>OR you can bulk upload a csv</strong></p>
+</div>
+
+<.bulk_upload_car_form changeset={@changeset} />
+
+<.back navigate={~p"/cars"}>Back to cars</.back>

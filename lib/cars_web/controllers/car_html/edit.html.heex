@@ -1,0 +1,8 @@
+<.header>
+  Edit Car <%= @car.id %>
+  <:subtitle>Use this form to manage car records in your database.</:subtitle>
+</.header>
+
+<.car_form changeset={@changeset} action={~p"/cars/#{@car}"} />
+
+<.back navigate={~p"/cars"}>Back to cars</.back>

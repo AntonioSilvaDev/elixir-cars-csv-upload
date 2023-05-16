@@ -1,0 +1,17 @@
+<.header>
+  Car <%= @car.id %>
+  <:subtitle>This is a car record from your database.</:subtitle>
+  <:actions>
+    <.link href={~p"/cars/#{@car}/edit"}>
+      <.button>Edit car</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.list>
+  <:item title="Name"><%= @car.name %></:item>
+  <:item title="Model"><%= @car.model %></:item>
+  <:item title="Brand"><%= @car.brand %></:item>
+</.list>
+
+<.back navigate={~p"/cars"}>Back to cars</.back>

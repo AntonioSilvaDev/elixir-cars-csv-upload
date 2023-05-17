@@ -1,5 +1,7 @@
 # Cars
 
+Simple app to use csv bulk upload feature to upload list of cars for bulk create
+
 To start your Phoenix server:
 
   * Run `mix setup` to install and setup dependencies
